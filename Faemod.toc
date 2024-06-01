@@ -1,5 +1,12 @@
+## Interface: 11302
 ## Title: Faemod
 ## Notes: Faemod!
 ## Author: Faelior
 ## Version: 2.3.0-classic
-Faemod.lua
+## SavedVariables: FaemodSavedVars
+
+logger.lua
+util.lua
+vars.lua
+config.lua
+core.lua
