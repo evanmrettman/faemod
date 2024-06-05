@@ -4,6 +4,7 @@ local function Faemod_EventHandler(self, event, ...)
     if event == "ADDON_LOADED" then
         local addonName = ...
         if addonName == "faemod" then
+            FaemodSavedVars = FaemodSavedVarsDefault
             Faemod_InitAddonConfig()
         end
     end
