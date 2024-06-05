@@ -1,4 +1,3 @@
-
 FaemodSavedVarsDefault = {
     debugEnabled = false,
     symmetricalPositionX = 135,
@@ -6,7 +5,6 @@ FaemodSavedVarsDefault = {
     focusPositionX = 340,
     focusPositionY = -180,
 }
-FaemodSavedVars = FaemodSavedVars or defaultSavedVars
 local logger = Logger:new("vars.lua")
 
 function Faemod_SaveVar(key, value)
