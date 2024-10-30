@@ -131,7 +131,12 @@ function Faemod_InitAddonConfig()
         focusPositionYInput:SetText(tostring(FaemodSavedVars.focusPositionY))
     end)
 
-    InterfaceOptions_AddCategory(FaemodOptionsPanel)
+    if InterfaceOptions_AddCategory then
+        InterfaceOptions_AddCategory(FaemodOptionsPanel)
+    else
+        print("Faemod could not find InterfaceOptions_AddCategory")
+    end
+    
     Faemod_SymmetricalPlayerFrames(FaemodSavedVars.symmetricalPositionX, FaemodSavedVars.symmetricalPositionY)
     Faemod_FocusFrame(FaemodSavedVars.focusPositionX, FaemodSavedVars.focusPositionY)
 end
